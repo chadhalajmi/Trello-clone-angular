@@ -1,4 +1,8 @@
+import { Injectable } from "@angular/core";
 import { CardSchema } from "./cardschema";
+@Injectable({
+  providedIn: 'root'
+})
 export class CardStore {
   cards: any = {};
   lastid = -1;
